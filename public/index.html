@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ex5 - NASA-book</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <script src="javascripts/ex5.js"></script>
+</head>
+
+<body>
+<div class="bg-image" style="background-image: url('images/kai-pilger-Ef6iL87-vOA-unsplash.jpg'); background-position: center; background-size: cover; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+</div>
+
+<div class="container pt-3 mt-5 my-5 text-primary text-center d-none" id="GeneralErrorMessage">
+  <h4 class="text-danger"><strong>An unexpected error occurred. Please try again later.</strong></h4></div>
+
+  <div class = "container pt-3 mt-5 my-5 text-primary text-center">
+    <h1><strong>Astronomy Picture of the Day</strong></h1>
+  </div>
+  <div id="openingScreen">
+    <div class="container my-1">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8 text-center">
+          <h3 class="text-success"><strong>Welcome! On this website you can see and comment on daily images, which are taken from the official NASA website. Enjoy!</strong></h3><br>
+        </div>
+      </div>
+    </div>
+    <div class="text-center text-light"><h4>
+        Please login with your username:
+      </h4>
+    </div>
+    <div class="container">
+      <form id="usernameForm">
+        <div class="text-center">
+          <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+              <label for="loginUsername"></label>
+              <input type="text" class="form-control" id="loginUsername" placeholder="Name123" name="login"><br>
+            </div>
+          </div>
+          <div id="userNameError"></div>
+          <button type="submit" class="btn btn-primary" id="loginToWeb">Login</button>
+        </div>
+      </form>
+    </div><br><br>
+  </div>
+
+
+  <div class="d-none" id="mainPage">
+    <div class="container my-3 text-center">
+      <form id="chooseDate">
+        <h3 class="text-light">Please choose your date:</h3>
+        <label for="endDate"></label>
+        <input type="date" id="endDate" name="chooseDate"><br><br>
+        <button type="submit" class="btn btn-primary">Choose</button><br><br>
+        <div id="addImg">
+        </div>
+      </form>
+      <div class="d-none" id="spinners">
+        <div class="spinner-grow text-muted"></div>
+        <div class="spinner-grow text-primary"></div>
+        <div class="spinner-grow text-success"></div>
+        <div class="spinner-grow text-info"></div>
+        <div class="spinner-grow text-warning"></div>
+      </div>
+      <span class="text-danger d-none" id="errorMessageForImg"><strong>Sorry, there are no images for this date. Please try to enter a different date or check your internet connection.</strong></span>
+      <br><button type="button" class="btn btn-primary d-none" id="moreButton">Press For More</button><br><br>
+    </div>
+  </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+</html>
