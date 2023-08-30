@@ -35,7 +35,10 @@ One of the standout features of this project is the implementation of a real-tim
 1. **User Experience**: It enhances the user experience by ensuring that the comments section is always up-to-date, allowing users to engage in real-time discussions about the images.
 2. **Technical Complexity**: Implementing a polling mechanism requires careful consideration of server load and performance. Fetching data too frequently could strain the server, while infrequent updates could diminish the real-time feel.
 3. **Consistency**: Ensuring data consistency across multiple clients is a challenging task. The 15-second polling interval strikes a balance between real-time updates and server performance.
-image
+
+![image](https://github.com/matantoled/NASA-Book/assets/75612523/9689d9b3-210e-4335-a5ad-3cfc8a387086)
+
+
 
 ## Getting Started
 
